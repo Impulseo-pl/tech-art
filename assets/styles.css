@@ -648,6 +648,7 @@ img[src$="/g14.jpg"]{object-position:62% 50%}
    ============================================================ */
 
 /* HERO: panel = ciepły grafit z subtelnym czerwonym poświatem (echo logo) */
+.hero-fach{padding:0}
 .hf-panel{
   background:linear-gradient(140deg,#241a14 0%,#171009 55%,#100b07 100%);
   position:relative;z-index:2;
