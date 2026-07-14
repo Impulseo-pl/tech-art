@@ -641,4 +641,41 @@ img[src$="/g14.jpg"]{object-position:62% 50%}
 [style*="g14.jpg"]{background-position:62% 50%}
 
 /* === auto-paleta ze zdjęć klienta (dopasowanie do estetyki socials) === */
-:root{--accent:#96612C;--accent-d:#72471D;--accent-soft:rgba(150,97,44,0.10);--paper:#F9F9F8;--paper-2:#EFEEED;--paper-3:#E8E7E5;}
+:root{--accent:#e07a1a;--accent-d:#b85f10;--accent-soft:rgba(224,122,26,0.10);--paper:#FAF8F6;--paper-2:#F0ECE7;--paper-3:#E8E2DB;--dark:#1b130b;}
+
+/* ============================================================
+   BRAND REFRESH — Tech-Art (grafit + bursztyn/czerwień z logo)
+   ============================================================ */
+
+/* HERO: panel = ciepły grafit z subtelnym czerwonym poświatem (echo logo) */
+.hf-panel{
+  background:linear-gradient(140deg,#241a14 0%,#171009 55%,#100b07 100%);
+  position:relative;z-index:2;
+  box-shadow:38px 0 80px -34px rgba(0,0,0,.6);
+  padding:clamp(2.4rem,5vw,4.8rem) clamp(1.8rem,4vw,3.8rem);
+}
+.hf-panel::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(130% 90% at 8% -10%,rgba(214,74,42,.20),transparent 55%)}
+.hf-panel>*{position:relative;z-index:1}
+
+.hf-kicker{color:#f0a24d;display:inline-flex;align-items:center;gap:.65rem}
+.hf-kicker::before{content:"";width:28px;height:2px;border-radius:2px;background:currentColor;display:inline-block}
+
+.hf-title{margin:var(--space-4) 0 var(--space-5);max-width:16ch}
+.hf-phone-num .ico-tel{color:#f0a24d}
+.hf-phone:hover .hf-phone-num{color:#f6c98f}
+
+/* przyciski: primary = bursztyn (energia, elektryka), ghost = jasny */
+.hf-actions .btn-accent{background:var(--accent);color:#1a120b;font-weight:700}
+.hf-actions .btn-accent:hover{background:#f08a2a;color:#1a120b;transform:translateY(-2px)}
+.hf-ghost{color:#fff;border-color:rgba(255,255,255,.5)}
+.hf-ghost:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.06)}
+
+.hf-meta{margin-top:var(--space-6);padding-top:var(--space-4);
+  border-top:1px solid rgba(255,255,255,.14);
+  display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;
+  color:rgba(245,238,231,.78);font-size:var(--text-sm);font-weight:500}
+.hf-meta span{display:inline-flex;align-items:center;gap:.5rem}
+.hf-meta span::before{content:"";width:6px;height:6px;border-radius:50%;background:#f0a24d;flex:none}
+
+.fp-row li:not(:last-child)::after{background:var(--accent)}
